@@ -4,8 +4,6 @@ A local AI assistant that helps pick the right wheel and tire size for popular c
 Thailand (Honda City, Toyota Yaris Ativ, Isuzu D-Max). It reads tire size charts and car
 spec sheets (PDF) and answers questions **with sources** (file + page).
 
-Course project for 5602203 Generative AI Literacy and Applications, Chulalongkorn University (CSII).
-
 ## Demo
 
 ![demo](screenshots/demo.png)
