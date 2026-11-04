@@ -80,6 +80,6 @@ Example: `OLLAMA_TIMEOUT=1200 TOP_K=10 python app.py`
 - Official spec pages: Honda Thailand, Toyota Thailand, Isuzu Thailand
 
 ## Team
-- Name 1 (GitHub person)
-- Name 2
-- Name 3
+- Jettawat Kaweenatthayanon 6858016056
+- Phophat Philaphandeth 6858081756
+- Ayyaphat Suwanphuk 6858116056
