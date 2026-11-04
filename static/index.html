@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>My Topic Assistant</title>
+<style>
+  body { font-family: system-ui, sans-serif; margin: 0; display: flex; height: 100vh; color: #222; }
+  aside { width: 280px; border-right: 1px solid #ddd; padding: 16px; overflow-y: auto; background: #fafafa; }
+  main { flex: 1; display: flex; flex-direction: column; }
+  #chat { flex: 1; overflow-y: auto; padding: 20px; }
+  .msg { max-width: 800px; margin: 0 0 16px; padding: 12px 14px; border-radius: 10px; white-space: pre-wrap; line-height: 1.5; }
+  .user { background: #e8f0fe; margin-left: auto; }
+  .bot { background: #f3f3f3; }
+  .err { background: #fde8e8; }
+  .sources { margin-top: 10px; font-size: 13px; border-top: 1px solid #ddd; padding-top: 8px; white-space: normal; }
+  .sources a { color: #1a56db; }
+  .sources .dim { opacity: .55; }
+  .cite { color: #1a56db; cursor: pointer; font-weight: 600; text-decoration: none; }
+  form#askForm { display: flex; gap: 8px; padding: 12px; border-top: 1px solid #ddd; }
+  #q { flex: 1; padding: 10px; font-size: 15px; }
+  button { padding: 8px 14px; cursor: pointer; }
+  .file { display: flex; justify-content: space-between; align-items: center; padding: 6px 4px; border-radius: 6px; }
+  .file:hover { background: #eee; }
+  .file a { color: #1a56db; text-decoration: none; word-break: break-all; }
+  .file button { padding: 0 6px; border: none; background: none; color: #999; }
+  .opts { font-size: 13px; margin-top: 16px; }
+  .opts label { display: block; margin: 6px 0; }
+  #status { font-size: 12px; color: #666; margin-top: 8px; }
+  /* PDF viewer panel */
+  #viewer { width: 45%; border-left: 1px solid #ddd; display: none; flex-direction: column; }
+  #viewer.open { display: flex; }
+  #viewer header { display: flex; justify-content: space-between; align-items: center; padding: 6px 10px; border-bottom: 1px solid #ddd; font-size: 13px; }
+  #viewer iframe { flex: 1; border: none; }
+</style>
+</head>
+<body>
+<aside>
+  <h3>📄 My documents</h3>
+  <input type="file" id="upload" accept="application/pdf" multiple>
+  <div id="status"></div>
+  <div id="files"></div>
+
+  <div class="opts">
+    <b>Search settings</b>
+    <label>Chunks to retrieve (top-k): <input type="number" id="topk" value="6" min="1" max="20" style="width:50px"></label>
+    <label><input type="checkbox" id="multi"> More searches (multi-query)</label>
+    <label><input type="checkbox" id="think"> Thinking mode (slower)</label>
+  </div>
+</aside>
+
+<main>
+  <div id="chat"></div>
+  <form id="askForm">
+    <input id="q" placeholder="Ask about your topic..." autocomplete="off">
+    <button>Ask</button>
+  </form>
+</main>
+
+<section id="viewer">
+  <header><span id="viewerTitle"></span>
+    <span><a id="viewerNewTab" target="_blank">open in new tab</a> &nbsp; <button onclick="closeViewer()">✕</button></span>
+  </header>
+  <iframe id="viewerFrame"></iframe>
+</section>
+
+<script>
+const $ = id => document.getElementById(id);
+
+// ---------- Task 2: clickable file list ----------
+async function loadFiles() {
+  const files = await (await fetch('/files')).json();
+  $('files').innerHTML = files.length ? '' : '<p style="color:#888">No files yet.</p>';
+  for (const f of files) {
+    const row = document.createElement('div');
+    row.className = 'file';
+    const a = document.createElement('a');
+    a.href = '/files/' + encodeURIComponent(f);
+    a.textContent = f;
+    a.onclick = e => { e.preventDefault(); openViewer(f, 1); };
+    const del = document.createElement('button');
+    del.textContent = '🗑'; del.title = 'Remove';
+    del.onclick = async () => { if (confirm('Remove ' + f + '?')) { await fetch('/files/' + encodeURIComponent(f), {method: 'DELETE'}); loadFiles(); } };
+    row.append(a, del);
+    $('files').append(row);
+  }
+}
+
+function openViewer(file, page) {
+  const url = '/files/' + encodeURIComponent(file) + '#page=' + (page || 1);
+  $('viewerFrame').src = 'about:blank';               // force reload so #page works
+  setTimeout(() => $('viewerFrame').src = url, 30);
+  $('viewerTitle').textContent = file + ' — page ' + (page || 1);
+  $('viewerNewTab').href = url;
+  $('viewer').classList.add('open');
+}
+function closeViewer() { $('viewer').classList.remove('open'); }
+
+$('upload').onchange = async e => {
+  const fd = new FormData();
+  for (const f of e.target.files) fd.append('files', f);
+  $('status').textContent = 'Uploading and indexing... (big PDFs take a while)';
+  const res = await (await fetch('/upload', {method: 'POST', body: fd})).json();
+  $('status').textContent = res.map(r => r.error ? `❌ ${r.file}: ${r.error}` : `✅ ${r.file}: ${r.chunks} chunks`).join('\n');
+  e.target.value = '';
+  loadFiles();
+};
+
+// ---------- chat ----------
+function addMsg(cls, text) {
+  const d = document.createElement('div');
+  d.className = 'msg ' + cls;
+  d.textContent = text;
+  $('chat').append(d);
+  $('chat').scrollTop = $('chat').scrollHeight;
+  return d;
+}
+
+// ---------- Task 1: show sources ----------
+function renderAnswer(div, data) {
+  const byN = Object.fromEntries(data.sources.map(s => [s.n, s]));
+  // turn [1] into clickable citations
+  const safe = data.answer.replace(/[&<>]/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;'}[c]));
+  div.innerHTML = safe.replace(/\[(\d+)\]/g, (m, n) =>
+    byN[n] ? `<a class="cite" data-n="${n}" title="${byN[n].file}, p.${byN[n].page}">[${n}]</a>` : m);
+  div.querySelectorAll('.cite').forEach(a => a.onclick = () => openViewer(byN[a.dataset.n].file, byN[a.dataset.n].page));
+
+  if (!data.sources.length) return;
+  const box = document.createElement('div');
+  box.className = 'sources';
+  box.innerHTML = '<b>Sources</b><br>';
+  for (const s of data.sources) {
+    const line = document.createElement('div');
+    if (!s.cited) line.className = 'dim';
+    const a = document.createElement('a');
+    a.href = s.url;
+    a.textContent = `[${s.n}] ${s.file}, page ${s.page}`;
+    a.title = s.snippet;
+    a.onclick = e => { e.preventDefault(); openViewer(s.file, s.page); };
+    line.append(a, document.createTextNode(s.cited ? '' : '  (retrieved, not cited)'));
+    box.append(line);
+  }
+  div.append(box);
+}
+
+$('askForm').onsubmit = async e => {
+  e.preventDefault();
+  const question = $('q').value.trim();
+  if (!question) return;
+  $('q').value = '';
+  addMsg('user', question);
+  const wait = addMsg('bot', 'Thinking...');
+  const t0 = Date.now();
+  try {
+    const r = await fetch('/ask', {
+      method: 'POST', headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({question, top_k: +$('topk').value, multi_query: $('multi').checked, think: $('think').checked})
+    });
+    const data = await r.json();
+    if (data.error) { wait.className = 'msg err'; wait.textContent = data.error; return; }
+    renderAnswer(wait, data);
+    const t = document.createElement('div');
+    t.style.cssText = 'font-size:11px;color:#999;margin-top:6px';
+    t.textContent = `${((Date.now() - t0) / 1000).toFixed(1)}s` + (data.queries.length > 1 ? ' · searched: ' + data.queries.join(' | ') : '');
+    wait.append(t);
+  } catch (err) {
+    wait.className = 'msg err';
+    wait.textContent = 'Request failed: ' + err;
+  }
+};
+
+loadFiles();
+</script>
+</body>
+</html>
