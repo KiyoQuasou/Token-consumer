@@ -146,9 +146,9 @@ Example: `OLLAMA_TIMEOUT=1200 TOP_K=10 python app.py` (Windows: `$env:OLLAMA_TIM
 - Car data comes from public spec pages and fitment databases. Always check the tire placard on the driver's door before buying tires.
 
 ## Team
-6858116056 Ayyaphat Suwanphuk (Poom) 
-6858016056 Jettawat Kaweenatthayanon (Aon)
-6858081756 Phophat Philaphandeth (Phat)
+- 6858116056 Ayyaphat Suwanphuk (Poom) 
+- 6858016056 Jettawat Kaweenatthayanon (Aon)
+- 6858081756 Phophat Philaphandeth (Phat)
 
 ## License
 MIT. See [LICENSE](LICENSE).
