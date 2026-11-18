@@ -1,0 +1,326 @@
+{
+  "tire-size-basics.pdf": {
+    "title": "Tire size basics: reading, ±3% rule, load & speed tables",
+    "category": "Guides",
+    "sources": [
+      {
+        "title": "Continental Technical Databook (ETRTO load & speed index)",
+        "url": "https://s3.amazonaws.com/gc-p/files/15741/Continental_ETRTO.pdf"
+      },
+      {
+        "title": "NHTSA – Be TireWise",
+        "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/tirehome_eng.pdf"
+      },
+      {
+        "title": "Gołębiewski (2015), Journal of KONES – tire diameter and fuel use",
+        "url": "https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-a7763d71-eb29-4fdc-985f-6798bc26a25a/c/Impact_of_Outer_Diameter_and_Energy_Efficiency_Class_of_Tyre_on_Fuel_Consumption_of_a_Passenger_Car.pdf"
+      }
+    ]
+  },
+  "thai-cars-overview.pdf": {
+    "title": "Overview: factory sizes & bolt patterns for all cars",
+    "category": "Guides",
+    "sources": [
+      {
+        "title": "Honda Thailand – City specifications",
+        "url": "https://www.honda.co.th/en/city/specification"
+      },
+      {
+        "title": "Koleso.ee – Toyota Yaris Ativ XP150 fitment",
+        "url": "https://koleso.ee/en/valuveljed/toyota/yaris-ativ/4427/xp150-2017-2021/9153"
+      },
+      {
+        "title": "TireWheelGuide – 2020 Nissan Almera N18",
+        "url": "https://tirewheelguide.com/sizes/nissan/almera/2020/"
+      },
+      {
+        "title": "Koleso.ee – Honda Civic fitment",
+        "url": "https://koleso.ee/en/valuveljed/honda/civic/1922/2025-now/3757"
+      },
+      {
+        "title": "Wheel-Size.my – Toyota Corolla Cross XG10",
+        "url": "https://wheel-size.my/size/toyota/corolla-cross/2022/"
+      },
+      {
+        "title": "TireWheelGuide – 2023 Honda HR-V",
+        "url": "https://tirewheelguide.com/sizes/honda/hr-v/2023/"
+      },
+      {
+        "title": "Koleso.ee – Mitsubishi Xpander NC (2021+)",
+        "url": "https://koleso.ee/en/valuveljed/mitsubishi/xpander/3325/nc-2021-now/6575"
+      },
+      {
+        "title": "TireWheelGuide – 2023 BYD Atto 3",
+        "url": "https://tirewheelguide.com/sizes/byd/atto-3/2023/"
+      },
+      {
+        "title": "TireWheelGuide – 2022 Toyota Fortuner",
+        "url": "https://tirewheelguide.com/sizes/toyota/fortuner/2022/"
+      },
+      {
+        "title": "Cararac – Isuzu D-Max 2020+ specifications",
+        "url": "https://cararac.com/spec/isuzu/d-max/d-max-iii-double-cab/"
+      },
+      {
+        "title": "Koleso.ee – Toyota Hilux Revo 2023+ (Southeast Asia)",
+        "url": "https://koleso.ee/en/valuveljed/toyota/hilux-revo/4372/2023-now/8933"
+      },
+      {
+        "title": "Koleso.ee – Ford Ranger P703 (2022+)",
+        "url": "https://koleso.ee/en/valuveljed/ford/ranger/1495/p703-2022-now/2902"
+      },
+      {
+        "title": "Koleso.ee – Mitsubishi L200/Triton LC/MV (2023+)",
+        "url": "https://koleso.ee/en/valuveljed/mitsubishi/l200/3309/lc-mv-2023-now/6512"
+      }
+    ]
+  },
+  "honda-city-specs.pdf": {
+    "title": "Honda City 2020+: wheel & tire specs",
+    "category": "Car specs",
+    "type": "sedan",
+    "sources": [
+      {
+        "title": "Honda Thailand – City specifications",
+        "url": "https://www.honda.co.th/en/city/specification"
+      },
+      {
+        "title": "Honda Indonesia – City brochure (185/55R16, 16x6J)",
+        "url": "https://honda-indonesia.com/brochures/3/download"
+      },
+      {
+        "title": "Koleso.ee – Honda City GN fitment",
+        "url": "https://koleso.ee/en/valuveljed/honda/city/1921/gn-2019-now/3741"
+      }
+    ]
+  },
+  "toyota-yaris-ativ-specs.pdf": {
+    "title": "Toyota Yaris Ativ 2017–2022: wheel & tire specs",
+    "category": "Car specs",
+    "type": "sedan",
+    "sources": [
+      {
+        "title": "Koleso.ee – Toyota Yaris Ativ XP150 fitment",
+        "url": "https://koleso.ee/en/valuveljed/toyota/yaris-ativ/4427/xp150-2017-2021/9153"
+      },
+      {
+        "title": "TireWheelGuide – 2022 Toyota Yaris Ativ",
+        "url": "https://tirewheelguide.com/sizes/toyota/yaris-ativ/2022/"
+      }
+    ]
+  },
+  "nissan-almera-specs.pdf": {
+    "title": "Nissan Almera 2020+ (N18): wheel & tire specs",
+    "category": "Car specs",
+    "type": "sedan",
+    "sources": [
+      {
+        "title": "TireWheelGuide – 2020 Nissan Almera N18",
+        "url": "https://tirewheelguide.com/sizes/nissan/almera/2020/"
+      },
+      {
+        "title": "Koleso.ee – Nissan Sunny/Almera N18 (2023+)",
+        "url": "https://koleso.ee/en/valuveljed/nissan/sunny/3473/n18-2023-now/6966"
+      }
+    ]
+  },
+  "honda-civic-specs.pdf": {
+    "title": "Honda Civic 2021+ (FE): wheel & tire specs",
+    "category": "Car specs",
+    "type": "sedan",
+    "sources": [
+      {
+        "title": "Koleso.ee – Honda Civic fitment",
+        "url": "https://koleso.ee/en/valuveljed/honda/civic/1922/2025-now/3757"
+      },
+      {
+        "title": "TireWheelGuide – 2022 Honda Civic",
+        "url": "https://tirewheelguide.com/sizes/honda/civic/2022/"
+      },
+      {
+        "title": "TyreCalculator – 2025 Honda Civic (Type R uses 5x120)",
+        "url": "https://tyrecalculator.pages.dev/cars/honda-civic-2025"
+      }
+    ]
+  },
+  "toyota-corolla-cross-specs.pdf": {
+    "title": "Toyota Corolla Cross 2020+: wheel & tire specs",
+    "category": "Car specs",
+    "type": "suv",
+    "sources": [
+      {
+        "title": "Wheel-Size.my – Toyota Corolla Cross XG10",
+        "url": "https://wheel-size.my/size/toyota/corolla-cross/2022/"
+      },
+      {
+        "title": "TireWheelGuide – 2020 Toyota Corolla Cross (Southeast Asia)",
+        "url": "https://tirewheelguide.com/sizes/toyota/corolla-cross/2020/"
+      }
+    ]
+  },
+  "honda-hr-v-specs.pdf": {
+    "title": "Honda HR-V 2021+ (RV): wheel & tire specs",
+    "category": "Car specs",
+    "type": "suv",
+    "sources": [
+      {
+        "title": "TireWheelGuide – 2023 Honda HR-V",
+        "url": "https://tirewheelguide.com/sizes/honda/hr-v/2023/"
+      },
+      {
+        "title": "Wheel-Size.jp – Honda HR-V RV",
+        "url": "https://wheel-size.jp/size/honda/hr-v/2022/"
+      }
+    ]
+  },
+  "mitsubishi-xpander-specs.pdf": {
+    "title": "Mitsubishi Xpander 2021+: wheel & tire specs",
+    "category": "Car specs",
+    "type": "suv",
+    "sources": [
+      {
+        "title": "Koleso.ee – Mitsubishi Xpander NC (2021+)",
+        "url": "https://koleso.ee/en/valuveljed/mitsubishi/xpander/3325/nc-2021-now/6575"
+      },
+      {
+        "title": "Koleso.ee – Mitsubishi Xpander Cross (205/55R17 91H)",
+        "url": "https://koleso.ee/en/valuveljed/mitsubishi/xpander-cross/3326/nc-2020-2023/6576"
+      }
+    ]
+  },
+  "byd-atto-3-specs.pdf": {
+    "title": "BYD Atto 3 2022+: wheel & tire specs",
+    "category": "Car specs",
+    "type": "suv",
+    "sources": [
+      {
+        "title": "TireWheelGuide – 2023 BYD Atto 3",
+        "url": "https://tirewheelguide.com/sizes/byd/atto-3/2023/"
+      },
+      {
+        "title": "BYD Accessories – Atto 3 tyre size chart",
+        "url": "https://www.bydaccessories.store/blogs/news/byd-atto-3-tyre-size-chart"
+      },
+      {
+        "title": "Michelin Thailand – BYD Atto 3 (215/55R18)",
+        "url": "https://en.michelin.co.th/auto/browse-tyres/by-vehicle/byd/atto/atto-3/2023/electric-204/215---55-R-18-99V"
+      }
+    ]
+  },
+  "toyota-fortuner-specs.pdf": {
+    "title": "Toyota Fortuner 2015+: wheel & tire specs",
+    "category": "Car specs",
+    "type": "suv",
+    "sources": [
+      {
+        "title": "TireWheelGuide – 2022 Toyota Fortuner",
+        "url": "https://tirewheelguide.com/sizes/toyota/fortuner/2022/"
+      },
+      {
+        "title": "Cararac – Toyota Fortuner tire and rim sizes",
+        "url": "https://cararac.com/wheel_sizes/toyota/fortuner.html"
+      },
+      {
+        "title": "AutoSTW – Toyota Fortuner wheel specs (131 Nm)",
+        "url": "https://autostw.com.au/blogs/news/toyota-fortuner-tyre-size-guide-wheel-specs-pcd-centre-bore-torque-settings"
+      }
+    ]
+  },
+  "isuzu-d-max-specs.pdf": {
+    "title": "Isuzu D-Max 2020+: wheel & tire specs",
+    "category": "Car specs",
+    "type": "pickup",
+    "sources": [
+      {
+        "title": "Cararac – Isuzu D-Max 2020+ specifications",
+        "url": "https://cararac.com/spec/isuzu/d-max/d-max-iii-double-cab/"
+      },
+      {
+        "title": "TireWheelGuide – 2020 Isuzu D-Max",
+        "url": "https://tirewheelguide.com/sizes/isuzu/d-max/2020/"
+      }
+    ]
+  },
+  "toyota-hilux-revo-specs.pdf": {
+    "title": "Toyota Hilux Revo 2020+: wheel & tire specs",
+    "category": "Car specs",
+    "type": "pickup",
+    "sources": [
+      {
+        "title": "Koleso.ee – Toyota Hilux Revo 2023+ (Southeast Asia)",
+        "url": "https://koleso.ee/en/valuveljed/toyota/hilux-revo/4372/2023-now/8933"
+      },
+      {
+        "title": "TireWheelGuide – 2021 Toyota Hilux Revo",
+        "url": "https://tirewheelguide.com/sizes/toyota/hilux-revo/2021/"
+      }
+    ]
+  },
+  "ford-ranger-specs.pdf": {
+    "title": "Ford Ranger 2022+ (Next-Gen): wheel & tire specs",
+    "category": "Car specs",
+    "type": "pickup",
+    "sources": [
+      {
+        "title": "Koleso.ee – Ford Ranger P703 (2022+)",
+        "url": "https://koleso.ee/en/valuveljed/ford/ranger/1495/p703-2022-now/2902"
+      },
+      {
+        "title": "Expressway.ph – Ford Ranger fitment (135 Nm)",
+        "url": "https://www.expressway.ph/tires/vehicles/ford/ranger"
+      }
+    ]
+  },
+  "mitsubishi-triton-specs.pdf": {
+    "title": "Mitsubishi Triton 2023+ (new gen): wheel & tire specs",
+    "category": "Car specs",
+    "type": "pickup",
+    "sources": [
+      {
+        "title": "Koleso.ee – Mitsubishi L200/Triton LC/MV (2023+)",
+        "url": "https://koleso.ee/en/valuveljed/mitsubishi/l200/3309/lc-mv-2023-now/6512"
+      },
+      {
+        "title": "MarkLines – Yokohama OE tire for new Triton (265/60R18 110H)",
+        "url": "https://www.marklines.com/en/news/304684"
+      },
+      {
+        "title": "AutoSTW – Mitsubishi Triton tyre & wheel specs",
+        "url": "https://autostw.com.au/blogs/news/mitsubishi-triton-tyre-size-wheel-specs-guide"
+      }
+    ]
+  },
+  "continental-etrto-databook.pdf": {
+    "title": "Continental Technical Databook (ETRTO tire data)",
+    "category": "Standards & research",
+    "download": "https://s3.amazonaws.com/gc-p/files/15741/Continental_ETRTO.pdf",
+    "sources": [
+      {
+        "title": "Continental Technical Databook (ETRTO tire data)",
+        "url": "https://s3.amazonaws.com/gc-p/files/15741/Continental_ETRTO.pdf"
+      }
+    ]
+  },
+  "kones-2015-tire-diameter-fuel.pdf": {
+    "title": "Gołębiewski (2015): tire diameter and fuel use, Journal of KONES",
+    "category": "Standards & research",
+    "download": "https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-a7763d71-eb29-4fdc-985f-6798bc26a25a/c/Impact_of_Outer_Diameter_and_Energy_Efficiency_Class_of_Tyre_on_Fuel_Consumption_of_a_Passenger_Car.pdf",
+    "sources": [
+      {
+        "title": "Gołębiewski (2015): tire diameter and fuel use, Journal of KONES",
+        "url": "https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-a7763d71-eb29-4fdc-985f-6798bc26a25a/c/Impact_of_Outer_Diameter_and_Energy_Efficiency_Class_of_Tyre_on_Fuel_Consumption_of_a_Passenger_Car.pdf"
+      }
+    ]
+  },
+  "nhtsa-tire-safety.pdf": {
+    "title": "NHTSA: Tire Safety, Everything Rides On It",
+    "category": "Standards & research",
+    "download": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/tirehome_eng.pdf",
+    "sources": [
+      {
+        "title": "NHTSA: Tire Safety, Everything Rides On It",
+        "url": "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/tirehome_eng.pdf"
+      }
+    ]
+  }
+}

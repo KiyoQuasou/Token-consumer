@@ -1,0 +1,740 @@
+{
+ "CARS": [
+  {
+   "id": "city",
+   "name": "Honda City",
+   "years": "2020+",
+   "type": "sedan",
+   "keys": [
+    "honda city",
+    "city",
+    "ซิตี้",
+    "ซิตี"
+   ],
+   "pcd": "4x100",
+   "cb": "56.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "108 Nm",
+   "sizes": [
+    {
+     "label": "15-inch",
+     "tire": "185/60R15",
+     "rim": "15 x 6J",
+     "et": "ET53"
+    },
+    {
+     "label": "16-inch (RS)",
+     "tire": "185/55R16",
+     "li": 87,
+     "sr": "H",
+     "rim": "16 x 6J",
+     "et": "ET53"
+    }
+   ],
+   "note": "Honda Thailand's spec page prints the 16-inch size as 185/60 R16, but the Honda Indonesia brochure and fitment databases list 185/55R16. 185/55R16 matches the 15-inch tire's diameter, so the Thai page is probably a typo.",
+   "src": [
+    "hondaTH",
+    "hondaID",
+    "cityKol"
+   ]
+  },
+  {
+   "id": "yaris",
+   "name": "Toyota Yaris Ativ",
+   "years": "2017–2022",
+   "type": "sedan",
+   "keys": [
+    "yaris ativ",
+    "yaris",
+    "ativ",
+    "ยาริส",
+    "เอทีฟ"
+   ],
+   "pcd": "4x100",
+   "cb": "54.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "103 Nm",
+   "sizes": [
+    {
+     "label": "15-inch",
+     "tire": "185/60R15",
+     "li": 84,
+     "sr": "H",
+     "rim": "15 x 5.5J",
+     "et": "ET45"
+    },
+    {
+     "label": "16-inch",
+     "tire": "195/50R16",
+     "li": 83,
+     "sr": "V",
+     "rim": "16 x 6J",
+     "et": "ET45"
+    }
+   ],
+   "note": "This data covers the 2017–2022 model. For the newer Yaris Ativ, check the tire placard on the driver's door.",
+   "src": [
+    "yarisKol",
+    "yarisTWG"
+   ]
+  },
+  {
+   "id": "almera",
+   "name": "Nissan Almera",
+   "years": "2020+ (N18)",
+   "type": "sedan",
+   "keys": [
+    "almera",
+    "อัลเมร่า",
+    "nissan",
+    "นิสสัน"
+   ],
+   "pcd": "4x100",
+   "cb": "60.1 mm",
+   "thread": "M12 x 1.25",
+   "torque": "check owner's manual",
+   "sizes": [
+    {
+     "label": "15-inch",
+     "tire": "195/65R15",
+     "rim": "15 x 5.5J",
+     "et": "ET40"
+    },
+    {
+     "label": "16-inch",
+     "tire": "205/55R16",
+     "rim": "16 x 6J",
+     "et": ""
+    },
+    {
+     "label": "17-inch",
+     "tire": "205/50R17",
+     "rim": "17 x 7J",
+     "et": ""
+    }
+   ],
+   "note": "The Almera uses M12 x 1.25 nuts, not the more common M12 x 1.5, so check this before buying aftermarket nuts.",
+   "src": [
+    "almTWG",
+    "almKol"
+   ]
+  },
+  {
+   "id": "civic",
+   "name": "Honda Civic",
+   "years": "2021+ (FE)",
+   "type": "sedan",
+   "keys": [
+    "civic",
+    "ซีวิค"
+   ],
+   "pcd": "5x114.3",
+   "cb": "64.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "check owner's manual",
+   "sizes": [
+    {
+     "label": "16-inch",
+     "tire": "215/55R16",
+     "li": 93,
+     "sr": "H",
+     "rim": "16 x 7J",
+     "et": "ET45"
+    },
+    {
+     "label": "17-inch",
+     "tire": "215/50R17",
+     "li": 91,
+     "sr": "H",
+     "rim": "17 x 7J",
+     "et": "ET45"
+    },
+    {
+     "label": "18-inch",
+     "tire": "235/40R18",
+     "li": 91,
+     "sr": "W",
+     "rim": "18 x 8J",
+     "et": "ET50"
+    }
+   ],
+   "note": "The Civic Type R uses a different bolt pattern (5x120), so Type R wheels won't fit a normal Civic.",
+   "src": [
+    "civicKol",
+    "civicTWG",
+    "civicTC"
+   ]
+  },
+  {
+   "id": "cc",
+   "name": "Toyota Corolla Cross",
+   "years": "2020+",
+   "type": "suv",
+   "keys": [
+    "corolla cross",
+    "corolla",
+    "โคโรลล่า ครอส",
+    "ครอส"
+   ],
+   "pcd": "5x114.3",
+   "cb": "60.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "103 Nm",
+   "sizes": [
+    {
+     "label": "17-inch",
+     "tire": "215/60R17",
+     "li": 96,
+     "sr": "H",
+     "rim": "17 x 6.5J",
+     "et": "ET45"
+    },
+    {
+     "label": "18-inch",
+     "tire": "225/50R18",
+     "li": 95,
+     "sr": "V",
+     "rim": "18 x 7J",
+     "et": "ET50"
+    }
+   ],
+   "note": "Same wheel fitment for the petrol and hybrid versions.",
+   "src": [
+    "ccWS",
+    "ccTWG"
+   ]
+  },
+  {
+   "id": "hrv",
+   "name": "Honda HR-V",
+   "years": "2021+ (RV)",
+   "type": "suv",
+   "keys": [
+    "hr-v",
+    "hrv",
+    "hr v",
+    "เอชอาร์วี"
+   ],
+   "pcd": "5x114.3",
+   "cb": "64.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "check owner's manual",
+   "sizes": [
+    {
+     "label": "17-inch",
+     "tire": "215/60R17",
+     "li": 96,
+     "sr": "H",
+     "rim": "17 x 7.5J",
+     "et": "ET55"
+    },
+    {
+     "label": "18-inch (RS)",
+     "tire": "225/50R18",
+     "li": 95,
+     "sr": "V",
+     "rim": "18 x 7.5J",
+     "et": "ET55"
+    }
+   ],
+   "note": "The Southeast Asia e:HEV versions mostly come on 18-inch wheels.",
+   "src": [
+    "hrvTWG",
+    "hrvWS"
+   ]
+  },
+  {
+   "id": "xpander",
+   "name": "Mitsubishi Xpander",
+   "years": "2021+",
+   "type": "suv",
+   "keys": [
+    "xpander",
+    "เอ็กซ์แพนเดอร์",
+    "x-pander"
+   ],
+   "pcd": "5x114.3",
+   "cb": "67.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "check owner's manual",
+   "sizes": [
+    {
+     "label": "16-inch",
+     "tire": "195/65R16",
+     "rim": "16 x 6J",
+     "et": ""
+    },
+    {
+     "label": "17-inch (Cross)",
+     "tire": "205/55R17",
+     "li": 91,
+     "sr": "H",
+     "rim": "17 x 6.5J",
+     "et": "ET45"
+    }
+   ],
+   "note": "One database lists a 57.1 mm center bore for the early 2017–2021 Xpander, but newer listings say 67.1 mm. Measure your wheel hub before buying hub rings.",
+   "src": [
+    "xpKol",
+    "xpcKol"
+   ]
+  },
+  {
+   "id": "atto3",
+   "name": "BYD Atto 3",
+   "years": "2022+",
+   "type": "suv",
+   "keys": [
+    "atto 3",
+    "atto3",
+    "atto",
+    "byd",
+    "แอตโต้"
+   ],
+   "pcd": "5x114.3",
+   "cb": "60.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "check owner's manual",
+   "sizes": [
+    {
+     "label": "17-inch",
+     "tire": "215/60R17",
+     "rim": "17 x 7J",
+     "et": "ET40"
+    },
+    {
+     "label": "18-inch",
+     "tire": "215/55R18",
+     "li": 99,
+     "sr": "V",
+     "rim": "18 x 7J",
+     "et": "ET40"
+    },
+    {
+     "label": "18-inch (wide)",
+     "tire": "235/50R18",
+     "rim": "18 x 7J",
+     "et": "ET40"
+    }
+   ],
+   "note": "The sources disagree on center bore: TireWheelGuide says 60.1 mm and a BYD accessories site says 56.1 mm. It's an EV, so it's heavy: use tires with load index 99 (XL) like Michelin Thailand lists.",
+   "src": [
+    "attoTWG",
+    "attoAcc",
+    "attoMich"
+   ]
+  },
+  {
+   "id": "fortuner",
+   "name": "Toyota Fortuner",
+   "years": "2015+",
+   "type": "suv",
+   "keys": [
+    "fortuner",
+    "ฟอร์จูนเนอร์",
+    "legender"
+   ],
+   "pcd": "6x139.7",
+   "cb": "106.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "131 Nm",
+   "sizes": [
+    {
+     "label": "17-inch",
+     "tire": "265/65R17",
+     "li": 112,
+     "sr": "S",
+     "rim": "17 x 7.5J",
+     "et": "ET30"
+    },
+    {
+     "label": "18-inch",
+     "tire": "265/60R18",
+     "li": 110,
+     "sr": "H",
+     "rim": "18 x 7.5J",
+     "et": "ET30"
+    }
+   ],
+   "note": "Some newer versions (like the Legender) come on 20-inch wheels. Check the door placard on those.",
+   "src": [
+    "fortTWG",
+    "fortCar",
+    "fortAU"
+   ]
+  },
+  {
+   "id": "dmax",
+   "name": "Isuzu D-Max",
+   "years": "2020+",
+   "type": "pickup",
+   "keys": [
+    "d-max",
+    "dmax",
+    "d max",
+    "ดีแม็กซ์",
+    "ดีแม็ก",
+    "isuzu",
+    "อีซูซุ"
+   ],
+   "pcd": "6x139.7",
+   "cb": "100.5 mm",
+   "thread": "M12 x 1.5",
+   "torque": "check owner's manual",
+   "sizes": [
+    {
+     "label": "17-inch",
+     "tire": "255/65R17",
+     "rim": "17 x 7J",
+     "et": ""
+    },
+    {
+     "label": "18-inch",
+     "tire": "265/60R18",
+     "li": 110,
+     "sr": "H",
+     "rim": "18 x 7.5J",
+     "et": "ET33"
+    }
+   ],
+   "note": "This is a pickup, so load index matters a lot. Never fit a tire with a lower load index than the factory tire.",
+   "src": [
+    "dmaxCar",
+    "dmaxTWG"
+   ]
+  },
+  {
+   "id": "revo",
+   "name": "Toyota Hilux Revo",
+   "years": "2020+",
+   "type": "pickup",
+   "keys": [
+    "hilux revo",
+    "hilux",
+    "revo",
+    "รีโว้",
+    "รีโว่",
+    "ไฮลักซ์"
+   ],
+   "pcd": "6x139.7",
+   "cb": "106.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "105 Nm",
+   "sizes": [
+    {
+     "label": "17-inch",
+     "tire": "265/65R17",
+     "li": 112,
+     "sr": "T",
+     "rim": "17 x 7.5J",
+     "et": "ET30"
+    },
+    {
+     "label": "18-inch",
+     "tire": "265/60R18",
+     "li": 110,
+     "sr": "H",
+     "rim": "18 x 7.5J",
+     "et": "ET30"
+    }
+   ],
+   "note": "This is for the raised (Prerunner / 4x4) versions. The low 2WD versions use a different bolt pattern (5x114.3, 60.1 mm bore) and smaller tires such as 215/65R16.",
+   "src": [
+    "revoKol",
+    "revoTWG"
+   ]
+  },
+  {
+   "id": "ranger",
+   "name": "Ford Ranger",
+   "years": "2022+ (Next-Gen)",
+   "type": "pickup",
+   "keys": [
+    "ranger",
+    "เรนเจอร์",
+    "ford",
+    "ฟอร์ด"
+   ],
+   "pcd": "6x139.7",
+   "cb": "93.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "135 Nm",
+   "sizes": [
+    {
+     "label": "16-inch",
+     "tire": "255/70R16",
+     "li": 111,
+     "sr": "T",
+     "rim": "16 x 7J",
+     "et": "ET55"
+    },
+    {
+     "label": "17-inch",
+     "tire": "265/65R17",
+     "li": 112,
+     "sr": "T",
+     "rim": "17 x 7.5J",
+     "et": "ET55"
+    },
+    {
+     "label": "18-inch",
+     "tire": "255/65R18",
+     "li": 111,
+     "sr": "T",
+     "rim": "18 x 7.5J",
+     "et": "ET55"
+    },
+    {
+     "label": "20-inch (Wildtrak)",
+     "tire": "255/55R20",
+     "li": 110,
+     "sr": "T",
+     "rim": "20 x 8J",
+     "et": "ET55"
+    }
+   ],
+   "note": "The Ranger Raptor uses different off-road tires (LT285/70R17), so this data doesn't cover it.",
+   "src": [
+    "rangerKol",
+    "rangerPH"
+   ]
+  },
+  {
+   "id": "triton",
+   "name": "Mitsubishi Triton",
+   "years": "2023+ (new gen)",
+   "type": "pickup",
+   "keys": [
+    "triton",
+    "ไทรทัน",
+    "l200"
+   ],
+   "pcd": "6x139.7",
+   "cb": "67.1 mm",
+   "thread": "M12 x 1.5",
+   "torque": "135 Nm",
+   "sizes": [
+    {
+     "label": "17-inch",
+     "tire": "265/65R17",
+     "rim": "17 x 7.5J",
+     "et": "ET38"
+    },
+    {
+     "label": "18-inch",
+     "tire": "265/60R18",
+     "li": 110,
+     "sr": "H",
+     "rim": "18 x 7.5J",
+     "et": "ET38"
+    }
+   ],
+   "note": "The new Triton launched in Thailand in July 2023 on Yokohama Geolandar 265/60R18 110H tires. Low 2WD versions may use a different setup.",
+   "src": [
+    "tritonKol",
+    "tritonOE",
+    "tritonAU"
+   ]
+  }
+ ],
+ "SOURCES": {
+  "hondaTH": [
+   "Honda Thailand – City specifications",
+   "https://www.honda.co.th/en/city/specification"
+  ],
+  "hondaID": [
+   "Honda Indonesia – City brochure (185/55R16, 16x6J)",
+   "https://honda-indonesia.com/brochures/3/download"
+  ],
+  "cityKol": [
+   "Koleso.ee – Honda City GN fitment",
+   "https://koleso.ee/en/valuveljed/honda/city/1921/gn-2019-now/3741"
+  ],
+  "yarisKol": [
+   "Koleso.ee – Toyota Yaris Ativ XP150 fitment",
+   "https://koleso.ee/en/valuveljed/toyota/yaris-ativ/4427/xp150-2017-2021/9153"
+  ],
+  "yarisTWG": [
+   "TireWheelGuide – 2022 Toyota Yaris Ativ",
+   "https://tirewheelguide.com/sizes/toyota/yaris-ativ/2022/"
+  ],
+  "dmaxCar": [
+   "Cararac – Isuzu D-Max 2020+ specifications",
+   "https://cararac.com/spec/isuzu/d-max/d-max-iii-double-cab/"
+  ],
+  "dmaxTWG": [
+   "TireWheelGuide – 2020 Isuzu D-Max",
+   "https://tirewheelguide.com/sizes/isuzu/d-max/2020/"
+  ],
+  "revoKol": [
+   "Koleso.ee – Toyota Hilux Revo 2023+ (Southeast Asia)",
+   "https://koleso.ee/en/valuveljed/toyota/hilux-revo/4372/2023-now/8933"
+  ],
+  "revoTWG": [
+   "TireWheelGuide – 2021 Toyota Hilux Revo",
+   "https://tirewheelguide.com/sizes/toyota/hilux-revo/2021/"
+  ],
+  "rangerKol": [
+   "Koleso.ee – Ford Ranger P703 (2022+)",
+   "https://koleso.ee/en/valuveljed/ford/ranger/1495/p703-2022-now/2902"
+  ],
+  "rangerPH": [
+   "Expressway.ph – Ford Ranger fitment (135 Nm)",
+   "https://www.expressway.ph/tires/vehicles/ford/ranger"
+  ],
+  "tritonKol": [
+   "Koleso.ee – Mitsubishi L200/Triton LC/MV (2023+)",
+   "https://koleso.ee/en/valuveljed/mitsubishi/l200/3309/lc-mv-2023-now/6512"
+  ],
+  "tritonOE": [
+   "MarkLines – Yokohama OE tire for new Triton (265/60R18 110H)",
+   "https://www.marklines.com/en/news/304684"
+  ],
+  "tritonAU": [
+   "AutoSTW – Mitsubishi Triton tyre & wheel specs",
+   "https://autostw.com.au/blogs/news/mitsubishi-triton-tyre-size-wheel-specs-guide"
+  ],
+  "fortTWG": [
+   "TireWheelGuide – 2022 Toyota Fortuner",
+   "https://tirewheelguide.com/sizes/toyota/fortuner/2022/"
+  ],
+  "fortCar": [
+   "Cararac – Toyota Fortuner tire and rim sizes",
+   "https://cararac.com/wheel_sizes/toyota/fortuner.html"
+  ],
+  "fortAU": [
+   "AutoSTW – Toyota Fortuner wheel specs (131 Nm)",
+   "https://autostw.com.au/blogs/news/toyota-fortuner-tyre-size-guide-wheel-specs-pcd-centre-bore-torque-settings"
+  ],
+  "ccWS": [
+   "Wheel-Size.my – Toyota Corolla Cross XG10",
+   "https://wheel-size.my/size/toyota/corolla-cross/2022/"
+  ],
+  "ccTWG": [
+   "TireWheelGuide – 2020 Toyota Corolla Cross (Southeast Asia)",
+   "https://tirewheelguide.com/sizes/toyota/corolla-cross/2020/"
+  ],
+  "hrvTWG": [
+   "TireWheelGuide – 2023 Honda HR-V",
+   "https://tirewheelguide.com/sizes/honda/hr-v/2023/"
+  ],
+  "hrvWS": [
+   "Wheel-Size.jp – Honda HR-V RV",
+   "https://wheel-size.jp/size/honda/hr-v/2022/"
+  ],
+  "civicKol": [
+   "Koleso.ee – Honda Civic fitment",
+   "https://koleso.ee/en/valuveljed/honda/civic/1922/2025-now/3757"
+  ],
+  "civicTWG": [
+   "TireWheelGuide – 2022 Honda Civic",
+   "https://tirewheelguide.com/sizes/honda/civic/2022/"
+  ],
+  "civicTC": [
+   "TyreCalculator – 2025 Honda Civic (Type R uses 5x120)",
+   "https://tyrecalculator.pages.dev/cars/honda-civic-2025"
+  ],
+  "almTWG": [
+   "TireWheelGuide – 2020 Nissan Almera N18",
+   "https://tirewheelguide.com/sizes/nissan/almera/2020/"
+  ],
+  "almKol": [
+   "Koleso.ee – Nissan Sunny/Almera N18 (2023+)",
+   "https://koleso.ee/en/valuveljed/nissan/sunny/3473/n18-2023-now/6966"
+  ],
+  "xpKol": [
+   "Koleso.ee – Mitsubishi Xpander NC (2021+)",
+   "https://koleso.ee/en/valuveljed/mitsubishi/xpander/3325/nc-2021-now/6575"
+  ],
+  "xpcKol": [
+   "Koleso.ee – Mitsubishi Xpander Cross (205/55R17 91H)",
+   "https://koleso.ee/en/valuveljed/mitsubishi/xpander-cross/3326/nc-2020-2023/6576"
+  ],
+  "attoTWG": [
+   "TireWheelGuide – 2023 BYD Atto 3",
+   "https://tirewheelguide.com/sizes/byd/atto-3/2023/"
+  ],
+  "attoAcc": [
+   "BYD Accessories – Atto 3 tyre size chart",
+   "https://www.bydaccessories.store/blogs/news/byd-atto-3-tyre-size-chart"
+  ],
+  "attoMich": [
+   "Michelin Thailand – BYD Atto 3 (215/55R18)",
+   "https://en.michelin.co.th/auto/browse-tyres/by-vehicle/byd/atto/atto-3/2023/electric-204/215---55-R-18-99V"
+  ],
+  "etrto": [
+   "Continental Technical Databook (ETRTO load & speed index)",
+   "https://s3.amazonaws.com/gc-p/files/15741/Continental_ETRTO.pdf"
+  ],
+  "kones": [
+   "Gołębiewski (2015), Journal of KONES – tire diameter and fuel use",
+   "https://yadda.icm.edu.pl/baztech/element/bwmeta1.element.baztech-a7763d71-eb29-4fdc-985f-6798bc26a25a/c/Impact_of_Outer_Diameter_and_Energy_Efficiency_Class_of_Tyre_on_Fuel_Consumption_of_a_Passenger_Car.pdf"
+  ],
+  "nhtsa": [
+   "NHTSA – Be TireWise",
+   "https://www.nhtsa.gov/sites/nhtsa.gov/files/documents/tirehome_eng.pdf"
+  ]
+ },
+ "LOAD": {
+  "75": 387,
+  "76": 400,
+  "77": 412,
+  "78": 425,
+  "79": 437,
+  "80": 450,
+  "81": 462,
+  "82": 475,
+  "83": 487,
+  "84": 500,
+  "85": 515,
+  "86": 530,
+  "87": 545,
+  "88": 560,
+  "89": 580,
+  "90": 600,
+  "91": 615,
+  "92": 630,
+  "93": 650,
+  "94": 670,
+  "95": 690,
+  "96": 710,
+  "97": 730,
+  "98": 750,
+  "99": 775,
+  "100": 800,
+  "101": 825,
+  "102": 850,
+  "103": 875,
+  "104": 900,
+  "105": 925,
+  "106": 950,
+  "107": 975,
+  "108": 1000,
+  "109": 1030,
+  "110": 1060,
+  "111": 1090,
+  "112": 1120,
+  "113": 1150,
+  "114": 1180,
+  "115": 1215,
+  "116": 1250,
+  "117": 1285,
+  "118": 1320,
+  "119": 1360,
+  "120": 1400,
+  "121": 1450
+ },
+ "SPEED": {
+  "N": 140,
+  "P": 150,
+  "Q": 160,
+  "R": 170,
+  "S": 180,
+  "T": 190,
+  "U": 200,
+  "H": 210,
+  "V": 240,
+  "W": 270,
+  "Y": 300
+ }
+}
